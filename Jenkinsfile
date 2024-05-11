@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Build') { // Build stage to build the project
             steps {
-                sh 'mvn clean install' // Execute Maven clean install to build the project
+                bat 'mvn clean install' // Execute Maven clean install to build the project
             }
         }
         stage('Test') { // Test stage to run tests
             steps {
-                sh 'mvn test' // Execute Maven test to run unit tests
+                bat 'mvn test' // Execute Maven test to run unit tests
             }
         }
     }
