@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') { // Checkout stage to clone the repository
             steps {
-                git branch: 'main', url: 'https://github.com/your/repository.git' // Clone the repository
+                git branch: 'main', url: 'https://github.com/rithu13/Project.git' // Clone the repository
             }
         }
         stage('Build') { // Build stage to build the project
